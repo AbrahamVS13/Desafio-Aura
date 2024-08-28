@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Texto Simple</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+<body>
+    <div class="editor-container">
+        <div class="toolbar">
+            <button onclick="document.execCommand('bold', false, null)">Negrita</button>
+            <button onclick="document.execCommand('italic', false, null)">Cursiva</button>
+            <button onclick="document.execCommand('underline', false, null)">Subrayado</button>
+            <button onclick="clearFormatting()">Limpiar Formato</button>
+        </div>
+        <div id="editor" contenteditable="true" class="editor">
+            Escribe aquí tu texto...
+        </div>
+    </div>
+    <script src="js/funciones.js"></script>
+</body>
+</html>
